@@ -22,56 +22,53 @@ public class NullObjectTest {
 
 	@Test
 	public void testNullName() {
-		Customer customer = site.getCustomer();
+		ICustomer customer = site.getCustomer();
+		String customerName = customer.getName();
 
-		String customerName;
-		if (customer == null) {
-			customerName = "occupant";
-		} else {
-			customerName = customer.getName();
-			fail();
-		}
-	}
-
-	@Test
-	public void testNullHistory() {
-		Customer customer = site.getCustomer();
-
-		int weeksDelinquent;
-		if (customer == null) {
-			weeksDelinquent = 0;
-		} else {
-			weeksDelinquent = customer.getPaymentHistory().getWeeksDelinquentInLastYear();
-			fail();
-		}
+		assertTrue(customerName != null);
 	}
 
 }
 
 class Site {
-	private Customer customer;
+	private ICustomer customer;
 
-	public Customer getCustomer() {
-		return customer;
+	public ICustomer getCustomer() {
+		if (customer != null) {
+			return customer;
+		}
+		return NullCustomer.getInstance();
+	}
+
+	public void setCustomer(ICustomer customer) {
+		this.customer = customer;
 	}
 }
 
-class Customer {
-	private String name = "Unspecified";
-	private PaymentHistory paymentHistory;
+interface ICustomer {
+	String getName();
+}
+
+class Customer implements ICustomer {
+	private String name;
 
 	public String getName() {
 		return name;
 	}
-
-	public PaymentHistory getPaymentHistory() {
-		return paymentHistory;
-	}
 }
 
-class PaymentHistory {
+final class NullCustomer implements ICustomer {
+	private final static ICustomer INSTACNE = new NullCustomer();
 
-	public int getWeeksDelinquentInLastYear() {
-		throw new UnsupportedOperationException();
+	public static ICustomer getInstance() {
+		return INSTACNE;
 	}
+
+	private static final String NAME = "occupant";
+
+	@Override
+	public String getName() {
+		return NAME;
+	}
+
 }

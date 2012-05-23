@@ -1,0 +1,13 @@
+{
+"type" : "record",
+"name" : "Document",
+"namespace" : "o.a.lucene.meta",
+"doc" : "Document analysis Desc",
+"fields" : [ {
+"name" : "caption",
+"type" : "string"
+}, {
+"name" : "description",
+"type" : "string"
+}]
+}

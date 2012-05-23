@@ -1,0 +1,13 @@
+{
+  "type" : "record",
+  "name" : "bgjdLuceneModel",
+  "namespace" : "o.a.lucene.meta",
+  "doc" : "bgjd Lucene Model",
+  "fields" : [ {
+    "name" : "id",
+    "type" : "Document"
+  }, {
+    "name" : "domain",
+    "type" : "Document"
+  } ]
+}

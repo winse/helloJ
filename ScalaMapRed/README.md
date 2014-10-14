@@ -1,6 +1,6 @@
 ## 环境搭建
 
-* scala-ide(eclipse) 2.10.4
+* scala-ide 3.0.3-20140327-1716-Typesafe (eclipse) /scala-2.10.4
 
 ## 正式环境运行
 

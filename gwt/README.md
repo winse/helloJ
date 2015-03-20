@@ -1,38 +1,38 @@
-## ÔËĞĞËµÃ÷
+## è¿è¡Œè¯´æ˜
 
 ```
 mvn package
 ```
 
-ÏÂÔØÁËÒÀÀµ°üºó£¬°ÑÏîÄ¿µ¼Èëµ½eclipse¡£
+ä¸‹è½½äº†ä¾èµ–åŒ…åï¼ŒæŠŠé¡¹ç›®å¯¼å…¥åˆ°eclipseã€‚
 
-ÔËĞĞ`gwt.launch`£¬»áµ¯³ögwt swing´°¿Ú¡£µã»÷**Launch GWT Module**µÄ**Launch Default Browser**ÔÚä¯ÀÀÆ÷ÖĞ¼ÓÔØ<http://127.0.0.1:8888/Hello.html?gwt.codesvr=127.0.0.1:9997>¡£
+è¿è¡Œ`gwt.launch`ï¼Œä¼šå¼¹å‡ºgwt swingçª—å£ã€‚ç‚¹å‡»**Launch GWT Module**çš„**Launch Default Browser**åœ¨æµè§ˆå™¨ä¸­åŠ è½½<http://127.0.0.1:8888/Hello.html?gwt.codesvr=127.0.0.1:9997>ã€‚
 
-ä¯ÀÀÆ÷´ò¿ªºó£¬Èç¹ûÃ»ÓĞGWT Plugin»áÌø×ªµ½²å¼ş°²×°Ò³Ãæ£¨[·­Ç½](http://www.uudaili.org/index.html)°É£©¡£ÕâÀïÎÒÖ±½Ó¸ù¾İ²å¼şµÄ°æ±¾ÏÂÔØ¶ÔÓ¦µÄä¯ÀÀÆ÷¡£
+æµè§ˆå™¨æ‰“å¼€åï¼Œå¦‚æœæ²¡æœ‰GWT Pluginä¼šè·³è½¬åˆ°æ’ä»¶å®‰è£…é¡µé¢ï¼ˆ[ç¿»å¢™](http://www.uudaili.org/index.html)å§ï¼‰ã€‚è¿™é‡Œæˆ‘ç›´æ¥æ ¹æ®æ’ä»¶çš„ç‰ˆæœ¬ä¸‹è½½å¯¹åº”çš„æµè§ˆå™¨ã€‚
 
 * [gwt-dev-plugin-1.26-rc1.xpi](https://code.google.com/p/google-web-toolkit/downloads/list)
 * [Firefox Setup 26.0](ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/26.0/win32/en-US/Firefox%20Setup%2026.0.exe)
 
-°²×°ºÃÒÔºó£¬ÔÚfirefoxä¯ÀÀÆ÷ÊäÈë¸Õ¸ÕµÄµØÖ·£¬¾Í¿ÉÒÔä¯ÀÀµ½Ğ§¹ûÁË¡£
+å®‰è£…å¥½ä»¥åï¼Œåœ¨firefoxæµè§ˆå™¨è¾“å…¥åˆšåˆšçš„åœ°å€ï¼Œå°±å¯ä»¥æµè§ˆåˆ°æ•ˆæœäº†ã€‚
 
-![](images/ok.png)
+![](docs/ok.png)
 
-## ¸÷ÖÖ¿Ó
+## å„ç§å‘
 
-* ±³Ç½
-* chromeµÄ²å¼ş²»ÄÜ°²×°£¨ÎŞ·¨½øĞĞ°²×°¼ì²âµ½ÒÔÏÂÎÊÌâ£º ¸ÃÓ¦ÓÃÒªÇóÊ¹ÓÃ NPAPI ²å¼ş)
-* firefoxÒ³ÃæµÄ°²×°°´Å¥²»ÄÜÏÂÔØ
-* Í¨¹ı<http://google-web-toolkit.googlecode.com>Ò³ÃæµÄÏÂÔØ°æ±¾firefox°æ±¾²»¶Ô£¡
+* èƒŒå¢™
+* chromeçš„æ’ä»¶ä¸èƒ½å®‰è£…ï¼ˆæ— æ³•è¿›è¡Œå®‰è£…æ£€æµ‹åˆ°ä»¥ä¸‹é—®é¢˜ï¼š è¯¥åº”ç”¨è¦æ±‚ä½¿ç”¨ NPAPI æ’ä»¶)
+* firefoxé¡µé¢çš„å®‰è£…æŒ‰é’®ä¸èƒ½ä¸‹è½½
+* é€šè¿‡<http://google-web-toolkit.googlecode.com>é¡µé¢çš„ä¸‹è½½ç‰ˆæœ¬firefoxç‰ˆæœ¬ä¸å¯¹ï¼
 
 ## gwt
 
-* ĞŞ¸ÄwebAppCreatorÊÊÓÃÓÚcygwin
+* ä¿®æ”¹webAppCreatoré€‚ç”¨äºcygwin
 
 ```
 #!/bin/sh
 HOMEDIR=`dirname $0`;
 
-# ÈÎÎñÌá½»¸øwindowsµÄjava³ÌĞòÇ°Ö´ĞĞ
+# ä»»åŠ¡æäº¤ç»™windowsçš„javaç¨‹åºå‰æ‰§è¡Œ
 function Cygwin_Patch_PathConvert() {
 
 	cygwin=false
@@ -52,12 +52,12 @@ Cygwin_Patch_PathConvert
 java -cp $CLASSPATH com.google.gwt.user.tools.WebAppCreator "$@";
 ```
 
-* ´´½¨helloworld
+* åˆ›å»ºhelloworld
 
 ```
 winse@Lenovo-PC /cygdrive/f/workspaces/gwt
 $ webAppCreator -overwrite -maven com.github.winse.Hello
 ```
 
-ÔõÃ´±àÒëºÍÔËĞĞ£¬¿ÉÒÔÔÄ¶ÁREADME.txt
+æ€ä¹ˆç¼–è¯‘å’Œè¿è¡Œï¼Œå¯ä»¥é˜…è¯»README.txt
 

@@ -11,7 +11,7 @@ mvn package
 浏览器打开后，如果没有GWT Plugin会跳转到插件安装页面（[翻墙](http://www.uudaili.org/index.html)吧）。这里我直接根据插件的版本下载对应的浏览器。
 
 * [gwt-dev-plugin-1.26-rc1.xpi](https://code.google.com/p/google-web-toolkit/downloads/list)
-* [Firefox Setup 26.0](ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/26.0/win32/en-US/Firefox%20Setup%2026.0.exe)
+* [Firefox Setup 26.0]<ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/26.0/win32/en-US/Firefox%20Setup%2026.0.exe>
 
 安装好以后，在firefox浏览器输入刚刚的地址，就可以浏览到效果了。
 
